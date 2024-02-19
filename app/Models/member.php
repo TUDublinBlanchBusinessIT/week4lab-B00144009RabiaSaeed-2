@@ -60,5 +60,8 @@ class member extends Model
         'dateofbirth' => 'nullable'
     ];
 
-    
+    public function __toString()
+    {
+        return $this->firstname. " ". $this->surname;
+    }
 }
